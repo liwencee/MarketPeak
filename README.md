@@ -9,6 +9,21 @@ After which the repository was created.
 I copied this "git remote add origin https://github.com/liwencee/MarketPeak.git" on the Github repository and run on my Gitbash 
 Then copied this |git branch -M main" and run on my gitbash
 did same for this "git push -u origin main"
+then from the folder downloaded i open my visual code, the css folder is open and my logo is inserted using visual code, the size is adjusted accord accordingingly
+with this code line 
+img {
+	width: 110px;
+	height: 90px;
+	margin-top: -20px;
+}
+	.footer-logo {
+	width: 100px;
+	height: 100px;
+		}
+  
+
+  
+
 
 
 
