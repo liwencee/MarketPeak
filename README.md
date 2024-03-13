@@ -20,6 +20,20 @@ img {
 	width: 100px;
 	height: 100px;
 		}
+
+I used powershell to ssh. gitbash to ec2 usimh=g this command line "cat /home/ubuntu/.ssh/id_rsa.pub"
+The key generated was copy and pasted into the SSH key in the Github. then the repositorey was clone on the ec2 instance by running git clone <the github url>
+once that is done, we install the webs server using these commands "sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+"
+the wesbite is expected to be stored in the /var/www/html but html was missing so i did make a directory for html after runnung ls to see the list in my directory. I realised no folder in my /var/www/html so i run sudo yum install git to install the git on my ec2 instance, i clone the repo git clone <the github url> after this i ran into another error trying to run sudo rm -rf /var/www/html/*
+sudo cp -r ~/MarketPeak_Ecommerce/* /var/www/html/
+so i used ls/var/www and then realise html direction was missing, so i run  mkdir / var/ www/html then my ec2 stop throwing errors.
+so i paste my ip generated from my instance to check if the website is deploy on my web brouser, i hav error showing the website is faulty somehere.  so i created security group the selected HTTP then port 80 was selected, the website was deployed
+
+
   
 
   
